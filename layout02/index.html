@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout02</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <div class="header1">
+
+        <div class="left">
+            <svg class="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="search"><path fill="#6563FF" d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z"></path></svg>
+            <input class="input" type="text">
+        </div>
+
+        <div class="right">
+            <img class="bell" src="./bell.png" alt="bell">
+            <img class="profile" src="./profile.png" alt="profile">
+            <h4> Karan </h4>
+        </div>
+
+    </div>
+
+    <div class="sidebar">
+        
+        <div class="head">
+            <img class="dash" src="./dash.png" alt="dashboard">
+            <a href="#">Dashboard</a>
+        </div>
+
+        <div class="option">
+            <ul>
+                <li>
+                    <img src="./home.png" alt="home">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <img src="./profileside.png" alt="profile">
+                    <a href="#">Profile</a>
+                </li>
+                <li>
+                    <img src="./message.png" alt="profile">
+                    <a href="#">Messages</a>
+                </li>
+                <li>
+                    <img src="./history.png" alt="profile">
+                    <a href="#">History</a>
+                </li>
+                <li>
+                    <img src="./tasks.png" alt="profile">
+                    <a href="#">Tasks</a>
+                </li>
+                <li>
+                    <img src="./community.png" alt="profile">
+                    <a href="#">Communities</a>
+                </li>
+                <li>
+                    <img src="./setting.png" alt="profile">
+                    <a href="#">Settings</a>
+                </li>
+                <li>
+                    <img src="./support.png" alt="profile">
+                    <a href="#">Support</a>
+                </li>
+                <li>
+                    <img src="./privacy.png" alt="profile">
+                    <a href="#">Privacy</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="main">
+
+        <div class="card">
+             <h1>Sign ups</h1>
+             <div class="no">114</div>
+             <div class="bottom">
+                <img src="./cardpro.png" alt="profile">
+                <p><span style="font-weight: 700;">25%</span> from last month</p>
+             </div>
+        </div>
+
+        <div class="card"> 
+            <h1>Revenue</h1>
+             <div class="no">$25,456</div>
+             <div class="bottom">
+                <img src="./revenue.png" alt="revenue">
+                <p><span style="font-weight: 700;">17.5%%</span> from last month</p>
+             </div>
+        </div>
+
+        <div class="card"> 
+            <h1>Open tickets</h1>
+            <div class="bottom">
+                <img  class="call" src="./call.png" alt="call">
+                <p class="no">5</p>
+            </div>
+        </div>
+
+        <div class="card"> 
+            <div class="chart">
+                <canvas id="barchart"></canvas>
+              </div>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script>
+                const ctx = document.getElementById('barchart');
+              
+                new Chart(ctx, {
+                  type: 'line',
+                  data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                      label: '# of Votes',
+                      data: [1, 5, 3, 8, 10, 15],
+                      borderWidth: 2
+                    }]
+                  },
+                  options: {
+                    scales: {
+                      y: {
+                        beginAtZero: true
+                      }
+                    }
+                  }
+                });
+              </script>
+        </div>
+
+        <div class="card"> 
+            <div class="header">
+                <span><img src="./noti.png" alt="notification"></span><h2>Notificaions</h2>
+            </div>
+            
+            <ul>
+                <li>
+                    <div class="left">
+                        <p>New comment</p>
+                    </div>
+                    <div class="right">21days ago</div>
+                </li>
+                <li>
+                    <div class="left">
+                        <p>New comment</p>
+                    </div>
+                    <div class="right">21days ago</div>
+                </li>
+                <li>
+                    <div class="left">
+                        <p>New comment</p>
+                    </div>
+                    <div class="right">21days ago</div>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="card"> 
+            <h1>Contact</h1>
+             <div class="no">7806558999</div>
+             <div class="bottom">
+                <img src="./email.png" alt="email">
+                <p><span style="font-weight: 700;">bdchbchjsbcb</span> @njsdncx.com</p>
+             </div>
+        </div>
+        
+    </div>
+</body>
+</html>
