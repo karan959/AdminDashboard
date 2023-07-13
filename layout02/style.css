@@ -282,7 +282,7 @@ a{
     
 }
 
-@media (max-width: 650px){
+@media (max-width: 550px){
     body{
         grid-template-rows: 60px 1fr;
         grid-template-columns: 1fr;
